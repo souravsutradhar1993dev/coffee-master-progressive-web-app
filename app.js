@@ -1,5 +1,6 @@
 import Store from './services/Store.js';
 import { loadData } from './services/Order.js';
+import Router from './services/Router.js';
 
 const $ = args => document.querySelector(this, args);
 const $$ = args => document.querySelectorAll(this, args);
@@ -11,7 +12,9 @@ HTMLElement.prototype.$$ = args => document.querySelectorAll(args);
 
 window.app = {};
 app.store = Store;
+app.router = Router;
 
 window.addEventListener('DOMContentLoaded', () => {
+    app.router.init();
     loadData();
-})
+});
