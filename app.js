@@ -2,6 +2,10 @@ import Store from './services/Store.js';
 import { loadData } from './services/Order.js';
 import Router from './services/Router.js';
 
+import { MenuPage } from './components/MenuPage.js';
+import { OrderPage } from './components/OrderPage.js';
+import { DetailsPage } from './components/DetailsPage.js';
+
 const $ = args => document.querySelector(this, args);
 const $$ = args => document.querySelectorAll(this, args);
 
